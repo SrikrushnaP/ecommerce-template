@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
-
 <head>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="" />
@@ -14,7 +12,9 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
   <!-- Favicons -->
-  <link rel="icon" href="assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
   <meta name="theme-color" content="#712cf9" />
 
   <!-- Master styles for this template -->
@@ -28,7 +28,7 @@
   <!-- SVG for social media start-->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="bootstrap" viewBox="0 0 118 94">
-      <title>Bootstrap</title>
+      <title>MyOnlineShop</title>
       <path fill-rule="evenodd" clip-rule="evenodd"
         d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
       </path>
@@ -52,8 +52,8 @@
     <div class="container d-flex flex-wrap">
       <ul class="nav me-auto">
         <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Offer</a></li>
         <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
       </ul>
       <ul class="nav">
@@ -66,19 +66,17 @@
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
       <div class="col-md-3 mb-md-0">
         <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap" />
-          </svg>
-          <span class="fs-4">Double header</span>
+          <img src="assets/favicons/favicon-32x32.png" alt="" class="m-2">
+          <span class="fs-4">MyOnlineShop</span>
         </a>
       </div>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">Electronic</a></li>
+        <li><a href="#" class="nav-link px-2">Men</a></li>
+        <li><a href="#" class="nav-link px-2">Women</a></li>
+        <li><a href="#" class="nav-link px-2">Kid</a></li>
+        <li><a href="#" class="nav-link px-2">Book</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
@@ -161,10 +159,7 @@
       </button>
     </div>
 
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
     <div class="container">
       <!-- Three columns of text below the carousel -->
       <div class="row">
@@ -280,8 +275,8 @@
       <!-- /.row -->
 
       <!-- First Catrgory Start -->
-      <div class="container px-4 py-5">
-        <h2 class="pb-2 border-bottom">Newly added product in Mobile category</h2>
+      <div class="mt-5 mb-5">
+        <h2 class="pb-2 border-bottom">Top Products</h2>
         <!-- START PRODUCT DISPLAY -->
         <div class="row">
           <div class="col col-3">
@@ -381,7 +376,7 @@
       </div>
       <!-- First Catrgory End -->
       <!-- Second Catrgory Start -->
-      <div class="container px-4 py-5">
+      <div class="mt-5 mb-5">
         <h2 class="pb-2 border-bottom">Newly added product in Mobile category</h2>
         <!-- START PRODUCT DISPLAY -->
         <div class="row">
@@ -481,6 +476,107 @@
         <!-- /END PRODUCT DISPLAY -->
       </div>
       <!-- Second Catrgory End -->
+      <!-- Third Catrgory Start -->
+      <div class="mt-5 mb-5">
+        <h2 class="pb-2 border-bottom">New Products</h2>
+        <!-- START PRODUCT DISPLAY -->
+        <div class="row">
+          <div class="col col-3">
+            <div class="card h-100">
+              <!-- Product image-->
+              <a href="#">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/612whSmr1ML._SL1000_.jpg" alt="" />
+              </a>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Test product</h5>
+                  <!-- Product price-->
+                  &#8377; 500
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="d-grid">
+                  <button class="btn btn-info me-2" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="card h-100">
+              <!-- Product image-->
+              <a href="#">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/612whSmr1ML._SL1000_.jpg" alt="" />
+              </a>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Test product</h5>
+                  <!-- Product price-->
+                  &#8377; 500
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="d-grid">
+                  <button class="btn btn-info me-2" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="card h-100">
+              <!-- Product image-->
+              <a href="#">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/612whSmr1ML._SL1000_.jpg" alt="" />
+              </a>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Test product</h5>
+                  <!-- Product price-->
+                  &#8377; 500
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="d-grid">
+                  <button class="btn btn-info me-2" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-3">
+            <div class="card h-100">
+              <!-- Product image-->
+              <a href="#">
+                <img class="card-img-top" src="https://m.media-amazon.com/images/I/612whSmr1ML._SL1000_.jpg" alt="" />
+              </a>
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Test product</h5>
+                  <!-- Product price-->
+                  &#8377; 500
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="d-grid">
+                  <button class="btn btn-info me-2" type="button">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /END PRODUCT DISPLAY -->
+      </div>
+      <!-- Third Catrgory End -->
       <!-- /.container -->
 
       <!-- FOOTER -->
@@ -490,29 +586,29 @@
         <footer>
           <div class="row">
             <div class="col-6 col-md-2 mb-2">
-              <h5>Section</h5>
+              <h5>Company</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Careers</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Blog</a></li>
               </ul>
             </div>
 
             <div class="col-6 col-md-2 mb-2">
-              <h5>Section</h5>
+              <h5>Need Help</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Talk with us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Write to us</a></li>
               </ul>
             </div>
 
             <div class="col-6 col-md-2 mb-2">
-              <h5>Section</h5>
+              <h5>Policy Info</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Support Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Return Policy</a></li>
               </ul>
             </div>
 
@@ -530,7 +626,7 @@
           </div>
 
           <div class="d-flex flex-column flex-sm-row justify-content-between py-2 border-top">
-            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <p>&copy; 2023 MyoOlineShop, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
                     <use xlink:href="#twitter" />
