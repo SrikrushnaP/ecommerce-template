@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,10 +8,8 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
   <meta name="generator" content="Hugo 0.111.3" />
   <title>My Online Shop</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
@@ -63,49 +62,159 @@
     </div>
   </nav>
   <div style="background-color: #e3f2fd;">
-  <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-      <div class="col-md-3 mb-md-0">
-        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-          <img src="../assets/favicons/favicon-32x32.png" alt="" class="m-2">
-          <span class="fs-4">MyOnlineShop</span>
-        </a>
-      </div>
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+        <div class="col-md-3 mb-md-0">
+          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <img src="../assets/favicons/favicon-32x32.png" alt="" class="m-2">
+            <span class="fs-4">MyOnlineShop</span>
+          </a>
+        </div>
 
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Electronic</a></li>
-        <li><a href="#" class="nav-link px-2">Men</a></li>
-        <li><a href="#" class="nav-link px-2">Women</a></li>
-        <li><a href="#" class="nav-link px-2">Kid</a></li>
-        <li><a href="#" class="nav-link px-2">Book</a></li>
-      </ul>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Electronic</a></li>
+          <li><a href="#" class="nav-link px-2">Men</a></li>
+          <li><a href="#" class="nav-link px-2">Women</a></li>
+          <li><a href="#" class="nav-link px-2">Kid</a></li>
+          <li><a href="#" class="nav-link px-2">Book</a></li>
+        </ul>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">
-          <i class="bi-cart-fill me-1"></i>
-          Cart
-          <span class="badge bg-dark text-white ms-1 rounded-pill">
-            5
-          </span>
-        </button>
-      </div>
-    </header>
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">
+            <i class="bi-cart-fill me-1"></i>
+            Cart
+            <span class="badge bg-dark text-white ms-1 rounded-pill">
+              5
+            </span>
+          </button>
+        </div>
+      </header>
+    </div>
   </div>
-</div>
 
   <main>
 
 
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container">
+      <section class="h-100 py-5">
+        <div class="row d-flex justify-content-center h-100">
+          <div class="col-md-10 col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h3 class="fw-normal mb-0 text-black">Shipping address</h3>
+              <a href="#" class="btn btn-outline-info">View Saved Address</a>
+            </div>
+            <div class="card text-info mb-3">
+              <div class="card-body">
+                <small>
+                  <span># The default address is shownin below if you want to modify the address you can modify that
+                    will update the current address</span><br>
+                  <span># If you want to select from existing address click and select form the saved address</span><br>
+                  <span># If you want to add new address you can click on the new check box</span>
+                </small>
+              </div>
+            </div>
+            <hr>
+            <form class="needs-validation">
+              <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="address" class="form-label">Selet address type</label>
+                </div>
+                <div class="col-auto">
+                  <input class="form-check-input" type="radio" name="addressType" id="inlineRadio1" value="existing"
+                    checked>
+                  <label class="form-check-label" for="inlineRadio1"> Existing</label>
+                </div>
+                <div class="col-auto">
+                  <input class="form-check-input" type="radio" name="addressType" id="inlineRadio2" value="edit">
+                  <label class="form-check-label" for="inlineRadio2"> Edit</label>
+                </div>
+                <div class="col-auto">
+                  <input class="form-check-input" type="radio" name="addressType" id="inlineRadio3" value="new">
+                  <label class="form-check-label" for="inlineRadio3"> New</label>
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="fName" class="form-label">First name</label>
+                  <input type="text" class="form-control" placeholder="" formControlName="fName">
+                  <div class="text-danger d-none">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="lName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="lName" placeholder="" formControlName="lName">
+                  <div class="text-danger d-none">
+                    Valid last name is required.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="line1" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="line1" placeholder="1234 Main St" formControlName="line1">
+                  <div class="text-danger d-none">
+                    Please enter your shipping address.
+                  </div>
+                </div>
 
-        <!-- All changable content will goes here -->
+                <div class="col-12">
+                  <label for="line2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                  <input type="text" class="form-control" id="line2" placeholder="Apartment or suite"
+                    formControlName="line2">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="country" class="form-label">Country</label>
+                  <select class="form-select" id="country" formControlName="country">
+                    <option>India</option>
+                  </select>
+                  <div class="text-danger d-none">
+                    Please select a country.
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="state" class="form-label">State</label>
+                  <select class="form-select" id="state" formControlName="state">
+                    <option>Odisha</option>
+                    <hr>
+                    <option value="" *ngIf="!defaultAddress?.state">Choose...</option>
+                    <option>Odisha</option>
+                    <option>Karnataka</option>
+                    <option>Delhi</option>
+                    <option>Maharastra</option>
+                  </select>
+                  <div class="text-danger d-none">
+                    Please select state.
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="postalCode" class="form-label">Postal Code</label>
+                  <input type="text" class="form-control" id="postalCode" placeholder="123456"
+                    formControlName="postalCode">
+                  <div class="text-danger">
+                    <span class="d-none">
+                      Postal Code is required
+                    </span>
+                    <span class="d-none">
+                      Please enter a valid Postal/PIN Code
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to pay </button>
+            </form>
+          </div>
+        </div>
+      </section>
 
     </div>
-      <!-- FOOTER -->
-      <div style="background-color: #e3f2fd;">
+    <!-- FOOTER -->
+    <div style="background-color: #e3f2fd;">
       <hr class="mb-5" />
-     
+
       <div class="container">
         <footer>
           <div class="row">
