@@ -70,6 +70,12 @@
 .bd-mode-toggle {
   z-index: 1500;
 }
+.secondary-nav-customize{
+  background-color: #e3f2fd;
+}
+.footer-customize{
+  background-color: #e3f2fd;
+}
 
 /* Style apply to images start */
 .imgSlide {
