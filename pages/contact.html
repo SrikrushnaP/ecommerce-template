@@ -11,7 +11,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
@@ -59,128 +59,106 @@
       </ul>
       <ul class="nav">
         <li class="nav-item"><a href="#" class="nav-link text-white px-2">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-white px-2">Sign up</a></li>
+        <li class="nav-item d-none d-sm-block"><a href="#" class="nav-link text-white px-2">Sign up</a></li>
       </ul>
     </div>
   </nav>
   <div style="background-color: #e3f2fd;">
-    <div class="container">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-        <div class="col-md-3 mb-md-0">
-          <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-            <img src="../assets/favicons/favicon-32x32.png" alt="" class="m-2">
-            <span class="fs-4">MyOnlineShop</span>
-          </a>
-        </div>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+      <div class="col-md-3 col-8 mb-md-0">
+        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+          <img src="../assets/favicons/favicon-32x32.png" alt="" class="m-2">
+          <span class="fs-4">MyOnlineShop</span>
+        </a>
+      </div>
+      <div class="col-4 d-block d-sm-none text-end px-1 mb-3">
+        <button type="button" class="btn btn-outline-primary">
+          <i class="bi-cart-fill me-1"></i>
+          <span class="badge bg-dark text-white ms-1 rounded-pill">
+            5
+          </span>
+        </button>
+      </div>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Electronic</a></li>
-          <li><a href="#" class="nav-link px-2">Men</a></li>
-          <li><a href="#" class="nav-link px-2">Women</a></li>
-          <li><a href="#" class="nav-link px-2">Kid</a></li>
-          <li><a href="#" class="nav-link px-2">Book</a></li>
-        </ul>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary">Electronic</a></li>
+        <li><a href="#" class="nav-link px-2">Men</a></li>
+        <li><a href="#" class="nav-link px-2">Women</a></li>
+        <li><a href="#" class="nav-link px-2">Kid</a></li>
+        <li><a href="#" class="nav-link px-2">Book</a></li>
+      </ul>
 
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">
-            <i class="bi-cart-fill me-1"></i>
-            Cart
-            <span class="badge bg-dark text-white ms-1 rounded-pill">
-              5
-            </span>
-          </button>
-        </div>
-      </header>
-    </div>
+      <div class="col-md-3 col-12 d-none d-sm-block text-end">
+        <button type="button" class="btn btn-outline-primary me-2">
+          <i class="bi-cart-fill me-1"></i>
+          Cart
+          <span class="badge bg-dark text-white ms-1 rounded-pill">
+            5
+          </span>
+        </button>
+      </div>
+    </header>
   </div>
+</div>
 
   <main>
 
 
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container">
-      <section class="h-100 py-5">
-        <div class="row d-flex justify-content-center h-100">
-          <div class="col-md-10 col-12">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <h3 class="fw-normal mb-0 text-black">Payment Details</h3>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-              <div class="col-md-8">
-                <form>
-                  <div class="my-3">
-                    <div class="form-check">
-                      <input id="credit" name="paymentMethod" value="upi" type="radio" class="form-check-input"
-                        formControlName="paymentMethod" checked>
-                      <label class="form-check-label" for="credit">UPI</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="debit" name="paymentMethod" value="debit" type="radio" class="form-check-input"
-                        formControlName="paymentMethod" disabled>
-                      <label class="form-check-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="debit" name="paymentMethod" value="credit" type="radio" class="form-check-input"
-                        formControlName="paymentMethod" disabled>
-                      <label class="form-check-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="form-check">
-                      <input id="paypal" name="paymentMethod" value="paypal" type="radio" class="form-check-input"
-                        formControlName="paymentMethod" disabled>
-                      <label class="form-check-label" for="paypal">PayPal</label>
-                    </div>
-                  </div>
 
-                  <div class="row gy-3">
-                    <div class="col-md-6">
-                      <label for="upiId" class="form-label">UPI ID</label>
-                      <input type="text" class="form-control" formControlName="upiId">
-                      <small class="text-muted d-none">
-                        <span> whre you paid/will pay </span>
-                        <span class="text-danger">
-                          UPI id is required
-                        </span>
-                        <span class="text-danger">
-                          Please enter a valid upi ID
-                        </span>
-                      </small>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="transationRefNum" class="form-label">Reference/Transation number</label>
-                      <input type="text" class="form-control" formControlName="transationRefNum">
-                      <span class="text-danger d-none">
-                        Transation Ref. Num is required
-                      </span>
-                    </div>
-
-                    <div class="mb-3">
-                      <label for="paymentScreenshoot" class="form-label">Upload Transaction Image/screenshoot</label>
-                      <input type="file" class="form-control" aria-label="file example"
-                        formControlName="paymentScreenshoot">
-                      <span class="text-danger d-none">
-                        Please upload the payment screenshoot
-                      </span>
-                    </div>
-                    <button class="w-100 btn btn-primary btn-lg" type="submit">Place Order</button>
-                  </div>
-                </form>
+      <div class="p-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Want to connect with us or heare from us?</h1>
+          <p class="col-md-8 fs-4">Our trained customer excutive can quickly solve many issues or direct you to the right person or place.</p>
+          <button class="btn btn-primary btn-lg" type="button">Send an Email</button>
+        </div>
+      </div>
+  
+      <div class="row align-items-md-stretch">
+        <div class="col-md-4">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Chat right now</h2>
+            <p>We will redirect you to a chat window. Please share your relevant info. Don't share you password or otp with any one</p>
+            <p><strong>WhatsApp Messaging Number: </strong> +91-1234-567899</p>
+            <p>Immediately start conversation with our chatbot <i class="bi bi-arrow-down-circle-fill"></i></p>
+            <button class="btn btn-outline-secondary" type="button">Start Chat </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Talk with us</h2>
+            <p>We'll first get a few details about your issue and then someone will call you right away.</p>
+            <p><strong>Office Number: </strong> +91-1234-567899</p>
+            <p><strong>Customer Suppor Numbert: </strong> +91-1234-567899</p>
+            <button class="btn btn-outline-secondary" type="button">Call button</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100 pt-5 pb-2 px-2 bg-body-tertiary border rounded-3">
+            <h2>Postal Address</h2>
+            <div class="card border-info mb-2">
+              <div class="card-body">
+                <h5 class="card-title">Registered Address</h5>
+                <p class="card-text">My Online Shop India Private Limited, Pritech Park SEZ, Bellandur Village, Varthur Hobli, Bengaluru – 560103</p>
               </div>
-              <div class="col-md-4">
-                <img class="card-img-top mb-5 mb-md-0" src="../assets/images/paytmqrspal.jpeg" alt="QR_Code">
-
+            </div>
+            <div class="card border-info">
+              <div class="card-body">
+                <h5 class="card-title">Office Address</h5>
+                <p class="card-text">My Online Shop India Private Limited, Pritech Park SEZ, Bellandur Village, Varthur Hobli, Bengaluru – 560103</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
     </div>
-    <!-- FOOTER -->
-    <div style="background-color: #e3f2fd;">
+      <!-- FOOTER -->
+      <div style="background-color: #e3f2fd;">
       <hr class="mb-5" />
-
+     
       <div class="container">
         <footer>
           <div class="row">
